@@ -11,8 +11,16 @@
     font-family: 'futuraBook';
     font-size: 14px;
   }
-  svg{
+  .links{
     margin-left:auto;
     margin-right: 82px;
+    z-index:1;
+    a{
+      text-decoration: none;
+    }
+    svg{
+      margin:0 22px;
+    }
   }
 };
+

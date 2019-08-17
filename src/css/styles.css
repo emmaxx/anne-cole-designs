@@ -22,9 +22,14 @@
     text-align: center;
     font-family: 'futuraBook';
     font-size: 14px; }
-  .banner svg {
+  .banner .links {
     margin-left: auto;
-    margin-right: 82px; }
+    margin-right: 82px;
+    z-index: 1; }
+    .banner .links a {
+      text-decoration: none; }
+    .banner .links svg {
+      margin: 0 22px; }
 
 * {
   padding: 0;

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'futuraBook';
+  src: url("../assets/fonts/futura_book_font-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'futuraMedium';
+  src: url("../assets/fonts/futura_medium_bt-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'bodoni';
+  src: url("../assets/fonts/ltc_bodoni_175_w01_regular-webfont.woff") format("woff"); }
+
+.banner {
+  background-color: #F4FDFF;
+  display: flex;
+  align-items: center;
+  height: 40px; }
+  .banner p {
+    flex: 0 1 auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'futuraBook';
+    font-size: 14px; }
+  .banner svg {
+    margin-left: auto;
+    margin-right: 82px; }
+
+* {
+  padding: 0;
+  margin: 0; }

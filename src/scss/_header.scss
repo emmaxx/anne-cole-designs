@@ -1,0 +1,18 @@
+.banner{
+  background-color: #F4FDFF;
+  display:flex;
+  align-items:center;
+  height:40px;
+  p{
+    flex: 0 1 auto;
+    position: absolute;
+    width:100%;
+    text-align:center;
+    font-family: 'futuraBook';
+    font-size: 14px;
+  }
+  svg{
+    margin-left:auto;
+    margin-right: 82px;
+  }
+};

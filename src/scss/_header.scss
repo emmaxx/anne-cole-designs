@@ -21,13 +21,17 @@
   }
 };
 
+.banner-mobile{
+  display:none;
+};
 
 .nav-container{
   display:flex;
   justify-content: center;
   nav{
+    position:relative;
     height:118px;
-    width: 1074px;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -35,6 +39,111 @@
       display:flex;
       justify-content: space-between;
       width:400px;
+    }
+    .nav-items-wrapper{
+      padding: 55px 0;
+      #shop-btn{
+        :hover{
+          +.shop-drop{
+            display:flex;
+          }
+        }
+        a{
+          padding: 55px 0;
+        }
+        .shop-drop:hover{
+          display:flex;
+        }
+        .shop-drop{
+          flex-direction:row;
+          justify-content: space-around;
+          top:118px;
+          right:0;
+          position:absolute;
+          display:none;
+          background-color:white;
+          height:392px;
+          width: 100%;
+          z-index:1;
+          .links{
+            display:flex;
+            flex-direction:column;
+            h3{
+              font-size:16px;
+              font-family: 'futuraBook';
+              color: $darkGrey;
+              font-weight: bold;
+            }
+            a{
+              padding: 10px 0;
+              font-size: 16px;
+              font-family: 'futuraBook';
+              color: $darkGrey;
+            }
+          }
+          .imgs{
+            display:flex;
+            flex-direction:column;
+            h4{
+              padding:10px 0;
+              text-align:center;
+              font-size:16px;
+              font-family: 'futura';
+              color: $darkGrey;
+            }
+          }
+        }
+      }
+      #collection-btn{
+        :hover{
+          +.collections-drop{
+            display:flex;
+          }
+        }
+        a{
+          padding: 60px 0;
+        }
+        .collections-drop:hover{
+          display:flex;
+        }
+        .collections-drop{
+          flex-direction:row;
+          justify-content: space-around;
+          top:118px;
+          right:0;
+          position:absolute;
+          display:none;
+          background-color:white;
+          height:265px;
+          width: 100%;
+          z-index:1;
+          .links{
+            display:flex;
+            flex-direction:column;
+            justify-content: flex-start;
+            padding-top: 30px;
+            h3{
+              font-size:16px;
+              font-family: 'futuraBook';
+              color: $darkGrey;
+              font-weight: bold;
+            }
+            h4{
+              padding:10px 0;
+              text-align:center;
+              font-size:16px;
+              font-family: 'futura';
+              color: $darkGrey;
+            }
+            a{
+              padding: 10px 0;
+              font-size: 16px;
+              font-family: 'futuraBook';
+              color: $darkGrey;
+            }
+          }
+        }
+      }
     }
     li{
       box-sizing: border-box;
@@ -51,3 +160,7 @@
     }
   }
 };
+
+.nav-container-mobile{
+  display:none;
+}

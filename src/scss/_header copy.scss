@@ -1,0 +1,60 @@
+.banner{
+  background-color: #F4FDFF;
+  display:flex;
+  align-items:center;
+  height:40px;
+  p{
+    position: absolute;
+    width:100%;
+    text-align:center;
+    font-family: 'futuraBook';
+    font-size: 14px;
+  }
+  .links{
+    margin-left: auto;
+    margin-right: 66px;
+    z-index:1;
+    a{
+      text-decoration: none;
+      margin:0 16px;
+    }
+  }
+};
+
+.banner-mobile{
+  display:none;
+};
+
+.nav-container{
+  display:flex;
+  justify-content: center;
+  nav{
+    height:118px;
+    width: 1074px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    .nav-items-wrapper{
+      display:flex;
+      justify-content: space-between;
+      width:400px;
+    }
+    li{
+      box-sizing: border-box;
+      font-size: 18px;
+      list-style-type: none;
+      .logo{
+        margin: 0 60px;
+      }
+      a{
+        font-family: 'futuraBook';
+        color: inherit;
+        text-decoration: none;   
+      }
+    }
+  }
+};
+
+.nav-container-mobile{
+  display:none;
+}

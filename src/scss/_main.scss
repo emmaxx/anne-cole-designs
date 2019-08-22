@@ -268,7 +268,7 @@
         left:325px;
       }
     }
-    .product-wrap{
+    #product-wrap{
       position:absolute;
       display:flex;
       justify-content: center;
@@ -277,13 +277,38 @@
       background-color:white;
       width:396px;
       height:550px;
+      #product-close-btn{
+        display:none;
+      }
       .product{
         display:flex;
         flex-direction: column;
         .product-img-wrap{
           display:flex;
           justify-content: center;
-          img{
+          .fake-olive{
+            background-image: url('../assets/Images/Fake-olive.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .floral{
+            background-image: url('../assets/Images/19Mo03536_136.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .dots\?\?{
+            background-image: url('../assets/Images/Fake-olive\ \(1\).png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .lines-chan{
+            background-image: url('../assets/Images/19mt25036_028.png');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          #featured-product{
+            width: 201px;
+            height:282px;
             padding: 40px 0;
           }
         }
@@ -303,8 +328,12 @@
         display:flex;
         justify-content: space-between;
         padding-top: 15px;
+        .active-product{
+          border: 1px solid blue;
+          padding:0;
+        }
         img{
-          padding: 0;
+          padding:0 1px;
         }
       }
     }

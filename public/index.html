@@ -275,7 +275,7 @@
       <div class="background-wrapper"><img src="./assets/Images/Rectangle 2.png" alt=""></div>
       <div class="resort-wrap">
         <div class="img-wrap">
-          <div class="circle-btn-wrap" id='btn-green-wrap'><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="circle-btn-wrap" id='btn-green-wrap' onclick="styleSelector('fake-olive')" ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="24" cy="24" r="24" fill="url(#paint0_radial)"/>
             <circle cx="24" cy="24" r="17" fill="white"/>
             <defs>
@@ -286,7 +286,7 @@
             </defs>
             </svg>
             </div>
-          <div class="circle-btn-wrap" id='btn-floral'><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="circle-btn-wrap" id='btn-floral' onclick="styleSelector('floral')"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="15" fill="url(#paint0_radial)"/>
             <ellipse cx="15.0019" cy="14.9999" rx="10.7143" ry="10.7143" fill="white"/>
             <defs>
@@ -299,18 +299,22 @@
             </div>
           <img src="./assets/Images/Rectangle (5).png" alt="">
         </div>
-        <div class="product-wrap">
+        <div id="product-wrap">
+          <div id="product-close-btn" onclick="removeVisibility('product-wrap')" ><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L10.5 10.5M20 20L10.5 10.5M10.5 10.5L20 1L1 20" stroke="black"/>
+            </svg>
+            </div>
           <div class="product">
             <div class="product-img-wrap">
-              <img src="./assets/Images/Fake-olive.png" alt="">
+              <div class='fake-olive' id="featured-product"></div>
             </div>
             <h3 class="title">Bandeau One Piece Swimsuit</h3>
             <p class="price">$42.98</p>
             <div class="product-selectors">
-              <img src="./assets/Images/Rectangle 2.13.png" alt="">
-              <img src="./assets/Images/Rectangle 2.9.png" alt="">
-              <img src="./assets/Images/Rectangle 2.11.png" alt="">
-              <img src="./assets/Images/Rectangle 2.12.png" alt="">
+              <img class='active-product' id='fake-olive' src="./assets/Images/Rectangle 2.13.png" onclick="styleSelector('fake-olive')" alt="">
+              <img id='floral' src="./assets/Images/Rectangle 2.9.png" onclick="styleSelector('floral')" alt="">
+              <img id='dots??' src="./assets/Images/Rectangle 2.11.png" onclick="styleSelector('dots??')" alt="">
+              <img id='lines-chan' src="./assets/Images/Rectangle 2.12.png" onclick="styleSelector('lines-chan')" alt="">
             </div>
           </div>
         </div>
@@ -557,6 +561,42 @@
             </div>
       </div>
   </footer>
+<script>
 
+const windowSize = window.matchMedia('(min-width: 1200px)');
+
+//gets targeted DOM element
+const elemID = (x) => document.getElementById(x);
+
+const addVisibility = (id) => {
+  elemID(id).style.display = 'flex';
+};
+
+const removeVisibility = (id) => {
+  elemID(id).style.display = 'none';
+};
+
+//changes currently selected product style.
+const styleSelector = (product) => {
+  //removes current active-product
+  const activeClass = document.getElementsByClassName('active-product');
+  activeClass[0].classList.remove('active-product');
+  //renders selected product based on btn clicked
+  elemID('featured-product').classList.remove(elemID('featured-product').classList[0]);
+  elemID('featured-product').classList.add(product);
+  //adds nifty border to selected product
+  elemID(product).classList.add('active-product')
+  //call to show product wrap if hidden
+  addVisibility('product-wrap');
+};
+//hides product on mobile and shows it on desktop, literally only I will ever notice this BUT YA NEVER KNOW
+productWrapChecker = (x) => {
+  console.log('fixit');
+  (x.matches) ? styleSelector('fake-olive') : removeVisibility('product-wrap');
+}
+
+windowSize.addListener(productWrapChecker);
+
+</script>
 </body>
 </html>

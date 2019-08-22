@@ -349,6 +349,14 @@
   .featured .resort-wrap {
     display: flex;
     position: relative; }
+    .featured .resort-wrap .img-wrap #btn-green-wrap {
+      position: absolute;
+      top: 187px;
+      left: 164px; }
+    .featured .resort-wrap .img-wrap #btn-floral {
+      position: absolute;
+      top: 150px;
+      left: 325px; }
     .featured .resort-wrap .product-wrap {
       position: absolute;
       display: flex;
@@ -664,6 +672,14 @@ footer {
       width: 100%; }
       .featured .resort-wrap .img-wrap img {
         width: 100%; }
+      .featured .resort-wrap .img-wrap #btn-green-wrap {
+        position: absolute;
+        top: 30%;
+        left: 30%; }
+      .featured .resort-wrap .img-wrap #btn-floral {
+        position: absolute;
+        top: 40%;
+        left: 55%; }
     .featured .resort-wrap .product-wrap {
       display: none; }
   .bermuda {

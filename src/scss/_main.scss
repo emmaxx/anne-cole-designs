@@ -256,6 +256,18 @@
   .resort-wrap{
     display:flex;
     position:relative;
+    .img-wrap{
+      #btn-green-wrap{
+        position:absolute;
+        top:187px;
+        left:164px;
+      }
+      #btn-floral{
+        position:absolute;
+        top:150px;
+        left:325px;
+      }
+    }
     .product-wrap{
       position:absolute;
       display:flex;

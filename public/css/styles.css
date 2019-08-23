@@ -618,6 +618,8 @@ footer {
     header .banner-mobile p {
       font-size: 14px;
       font-family: 'futuraBook'; }
+  .hero .hero-card {
+    left: 5%; }
   .best-sellers-wrapper {
     margin-bottom: 43px; }
     .best-sellers-wrapper .best-sellers-header {
@@ -775,6 +777,16 @@ footer {
         margin: 0;
         display: flex;
         justify-content: left; } }
+
+@media screen and (max-width: 1000px) {
+  .hero .hero-card {
+    left: 115px; }
+    .hero .hero-card h1 {
+      font-size: 36px; }
+    .hero .hero-card button {
+      height: 30px;
+      width: 150px;
+      font-size: 12px; } }
 
 @media screen and (max-width: 700px) {
   .hero {

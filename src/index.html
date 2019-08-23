@@ -157,7 +157,12 @@
   <main>
 
     <div class="hero">
-      <img src="./assets/Images/hero.png" alt="">
+      <div class="hero-card">
+        <h5>New Collection</h5>
+        <h1>Resort 2018</h1>
+        <button>Shop Now</button>
+      </div>
+      <img src="./assets/Images/Rectangle (8).png" alt="">
     </div>
     <div class="hero-mobile">
       <img src="./assets/Images/Rectangle (7).png" alt="">
@@ -591,7 +596,6 @@ const styleSelector = (product) => {
 };
 //hides product on mobile and shows it on desktop, literally only I will ever notice this BUT YA NEVER KNOW
 productWrapChecker = (x) => {
-  console.log('fixit');
   (x.matches) ? styleSelector('fake-olive') : removeVisibility('product-wrap');
 }
 

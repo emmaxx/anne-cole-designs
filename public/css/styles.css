@@ -139,11 +139,33 @@
 .nav-container-mobile {
   display: none; }
 
-.hero img {
-  mix-blend-mode: multiply;
-  width: 100%;
-  margin-bottom: 90px;
-  background: none; }
+.hero {
+  position: relative; }
+  .hero .hero-card {
+    position: absolute;
+    top: 209px;
+    left: 115px; }
+    .hero .hero-card h5 {
+      font-size: 18px;
+      font-family: 'futuraBook';
+      color: #2A2A2A; }
+    .hero .hero-card h1 {
+      font-size: 96px;
+      font-family: 'bodoni';
+      color: #2A2A2A; }
+    .hero .hero-card button {
+      width: 169px;
+      height: 59px;
+      background-color: #202020;
+      color: white;
+      font-family: 'futuraBook';
+      font-size: 18px;
+      text-transform: uppercase; }
+  .hero img {
+    mix-blend-mode: multiply;
+    width: 100%;
+    margin-bottom: 90px;
+    background: none; }
 
 .hero-mobile {
   display: none; }

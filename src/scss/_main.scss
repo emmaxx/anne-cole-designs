@@ -1,4 +1,29 @@
 .hero{
+  position: relative;
+  .hero-card{
+    position:absolute;
+    top: 209px;
+    left: 115px;
+    h5{
+      font-size: 18px;
+      font-family: 'futuraBook';
+      color: $darkGrey;
+    }
+    h1{
+      font-size: 96px;
+      font-family: 'bodoni';
+      color: $darkGrey;
+    }
+    button{
+      width:169px;
+      height:59px;
+      background-color: #202020;
+      color:white;
+      font-family: 'futuraBook';
+      font-size:18px;
+      text-transform:uppercase;
+    }
+  }
   img{
     mix-blend-mode: multiply;
     width:100%;

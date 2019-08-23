@@ -44,9 +44,11 @@
     }
   }
   .hero{
-    .hero-card{
-      left: 5%;
-    }
+   .hero-wrap{
+     .hero-card{
+       left: 5%;
+     }
+  }
   }
   .best-sellers-wrapper{
     margin-bottom:43px;
@@ -280,15 +282,17 @@
 
 @media screen and (max-width: 1000px){
   .hero{
-    .hero-card{
-      left: 115px;
-      h1{
-        font-size: 36px;
-      }
-      button{
-        height: 30px;
-        width: 150px;
-        font-size: 12px;
+    .hero-wrap{
+      .hero-card{
+        left: 115px;
+        h1{
+          font-size: 36px;
+        }
+        button{
+          height: 30px;
+          width: 150px;
+          font-size: 12px;
+        }
       }
     }
   }

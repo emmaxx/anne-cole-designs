@@ -140,32 +140,35 @@
   display: none; }
 
 .hero {
-  position: relative; }
-  .hero .hero-card {
-    position: absolute;
-    top: 209px;
-    left: 115px; }
-    .hero .hero-card h5 {
-      font-size: 18px;
-      font-family: 'futuraBook';
-      color: #2A2A2A; }
-    .hero .hero-card h1 {
-      font-size: 96px;
-      font-family: 'bodoni';
-      color: #2A2A2A; }
-    .hero .hero-card button {
-      width: 169px;
-      height: 59px;
-      background-color: #202020;
-      color: white;
-      font-family: 'futuraBook';
-      font-size: 18px;
-      text-transform: uppercase; }
-  .hero img {
-    mix-blend-mode: multiply;
-    width: 100%;
-    margin-bottom: 90px;
-    background: none; }
+  display: flex;
+  justify-content: center; }
+  .hero .hero-wrap {
+    position: relative; }
+    .hero .hero-wrap .hero-card {
+      position: absolute;
+      top: 209px;
+      left: 115px; }
+      .hero .hero-wrap .hero-card h5 {
+        font-size: 18px;
+        font-family: 'futuraBook';
+        color: #2A2A2A; }
+      .hero .hero-wrap .hero-card h1 {
+        font-size: 96px;
+        font-family: 'bodoni';
+        color: #2A2A2A; }
+      .hero .hero-wrap .hero-card button {
+        width: 169px;
+        height: 59px;
+        background-color: #202020;
+        color: white;
+        font-family: 'futuraBook';
+        font-size: 18px;
+        text-transform: uppercase; }
+    .hero .hero-wrap img {
+      mix-blend-mode: multiply;
+      width: 100%;
+      margin-bottom: 90px;
+      background: none; }
 
 .hero-mobile {
   display: none; }
@@ -618,7 +621,7 @@ footer {
     header .banner-mobile p {
       font-size: 14px;
       font-family: 'futuraBook'; }
-  .hero .hero-card {
+  .hero .hero-wrap .hero-card {
     left: 5%; }
   .best-sellers-wrapper {
     margin-bottom: 43px; }
@@ -779,11 +782,11 @@ footer {
         justify-content: left; } }
 
 @media screen and (max-width: 1000px) {
-  .hero .hero-card {
+  .hero .hero-wrap .hero-card {
     left: 115px; }
-    .hero .hero-card h1 {
+    .hero .hero-wrap .hero-card h1 {
       font-size: 36px; }
-    .hero .hero-card button {
+    .hero .hero-wrap .hero-card button {
       height: 30px;
       width: 150px;
       font-size: 12px; } }
